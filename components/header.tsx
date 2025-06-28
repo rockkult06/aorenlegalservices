@@ -62,7 +62,7 @@ export default function Header() {
                 className="border-none bg-transparent p-0 shadow-none"
               >
                 {/* Buzlu Cam Menu Kartı */}
-                <div className="m-6 bg-black/40 backdrop-blur-3xl rounded-3xl border border-black/10 shadow-2xl p-6 w-80">
+                <div className="m-6 bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-6 w-80 transition-all duration-300">
                   {/* Menu Header */}
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold text-white mb-2">Menu</h2>
@@ -88,7 +88,7 @@ export default function Header() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="group relative block py-3 px-4 rounded-xl transition-all duration-300 ease-in-out hover:bg-black/60 hover:backdrop-blur-lg"
+                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/25 hover:backdrop-blur-[12px] hover:rounded-[24px]"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
                             animation: 'slideInLeft 0.6s ease-out forwards'
