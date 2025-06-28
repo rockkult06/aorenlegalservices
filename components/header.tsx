@@ -65,7 +65,7 @@ export default function Header() {
                 <div className="m-6 bg-black/40 backdrop-blur-3xl rounded-3xl border border-black/10 shadow-2xl p-6 w-80">
                   {/* Menu Header */}
                   <div className="mb-6">
-                    <h2 className="text-2xl font-bold text-black mb-2">Menu</h2>
+                    <h2 className="text-2xl font-bold text-white mb-2">Menu</h2>
                     <div className="w-12 h-0.5 bg-blue-500"></div>
                   </div>
 
@@ -95,8 +95,8 @@ export default function Header() {
                           }}
                         >
                           <div className="flex items-center gap-3">
-                            <IconComponent className="w-5 h-5 text-black group-hover:text-blue-600 transition-colors duration-200" />
-                            <span className="text-black text-base font-medium group-hover:text-blue-600 transition-colors duration-200">
+                            <IconComponent className="w-5 h-5 text-white group-hover:text-blue-600 transition-colors duration-200" />
+                            <span className="text-white text-base font-medium group-hover:text-blue-600 transition-colors duration-200">
                               {item.name}
                             </span>
                           </div>
