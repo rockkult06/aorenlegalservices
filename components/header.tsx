@@ -58,8 +58,8 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent 
-                side="left" 
-                className="border-none bg-transparent p-0 shadow-none"
+                side="left"
+                className="border-none bg-transparent p-0 shadow-none mt-16 absolute"
               >
                 {/* Buzlu Cam Menu Kartı */}
                 <div className="m-6 bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-6 w-80 transition-all duration-300">
