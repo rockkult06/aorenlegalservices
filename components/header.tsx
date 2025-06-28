@@ -62,10 +62,10 @@ export default function Header() {
                 className="border-none bg-transparent p-0 shadow-none"
               >
                 {/* Buzlu Cam Menu Kartı */}
-                <div className="m-6 bg-white/30 backdrop-blur-3xl rounded-3xl border border-white/10 shadow-2xl p-6 w-80">
+                <div className="m-6 bg-black/40 backdrop-blur-3xl rounded-3xl border border-black/10 shadow-2xl p-6 w-80">
                   {/* Menu Header */}
                   <div className="mb-6">
-                    <h2 className="text-2xl font-bold text-gray-800 mb-2">Menu</h2>
+                    <h2 className="text-2xl font-bold text-black mb-2">Menu</h2>
                     <div className="w-12 h-0.5 bg-blue-500"></div>
                   </div>
 
@@ -88,15 +88,15 @@ export default function Header() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="group relative block py-3 px-4 rounded-xl transition-all duration-300 ease-in-out hover:bg-white/40 hover:backdrop-blur-lg"
+                          className="group relative block py-3 px-4 rounded-xl transition-all duration-300 ease-in-out hover:bg-black/60 hover:backdrop-blur-lg"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
                             animation: 'slideInLeft 0.6s ease-out forwards'
                           }}
                         >
                           <div className="flex items-center gap-3">
-                            <IconComponent className="w-5 h-5 text-gray-700 group-hover:text-blue-600 transition-colors duration-200" />
-                            <span className="text-gray-800 text-base font-medium group-hover:text-blue-600 transition-colors duration-200">
+                            <IconComponent className="w-5 h-5 text-black group-hover:text-blue-600 transition-colors duration-200" />
+                            <span className="text-black text-base font-medium group-hover:text-blue-600 transition-colors duration-200">
                               {item.name}
                             </span>
                           </div>
