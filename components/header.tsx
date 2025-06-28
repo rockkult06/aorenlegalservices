@@ -88,13 +88,12 @@ export default function Header() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 focus:border-0"
+                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
                             animation: 'slideInLeft 0.6s ease-out forwards',
                             textDecoration: 'none',
-                            borderBottom: 'none',
-                            boxShadow: 'none'
+                            borderBottom: 'none'
                           }}
                         >
                           <div className="flex items-center gap-3">
