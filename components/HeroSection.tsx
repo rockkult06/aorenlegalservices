@@ -40,12 +40,12 @@ margin-top: 80px;
 const InfoBox = styled.div`
 background-color: rgba(255, 255, 255, 0.15);
 backdrop-filter: blur(10px);
-padding: 45px 35px;
+padding: 32px 22px;
 border-radius: 20px;
 cursor: pointer;
 transition: all 0.3s ease;
-width: 380px;
-min-height: 240px;
+width: 320px;
+min-height: 170px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -62,7 +62,7 @@ box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 20px;
   color: white;
   font-weight: 600;
@@ -72,7 +72,7 @@ h2 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 0.9em;
   opacity: 0.9;
   color: white;
   margin: 0;
@@ -81,7 +81,7 @@ p {
 
 @media (max-width: 768px) {
   width: 100%;
-  padding: 35px 30px;
+  padding: 24px 14px;
   min-height: auto;
   border-radius: 18px;
   
