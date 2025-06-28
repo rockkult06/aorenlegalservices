@@ -88,19 +88,18 @@ export default function Header() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/25 hover:backdrop-blur-[12px] hover:rounded-[24px]"
+                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px]"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
                             animation: 'slideInLeft 0.6s ease-out forwards'
                           }}
                         >
                           <div className="flex items-center gap-3">
-                            <IconComponent className="w-5 h-5 text-white group-hover:text-blue-600 transition-colors duration-200" />
-                            <span className="text-white text-base font-medium group-hover:text-blue-600 transition-colors duration-200">
+                            <IconComponent className="w-5 h-5 text-white group-hover:text-white transition-colors duration-200" />
+                            <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200">
                               {item.name}
                             </span>
                           </div>
-                          <div className="absolute bottom-0 left-4 right-4 h-px bg-gray-300/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></div>
                         </Link>
                       );
                     })}
