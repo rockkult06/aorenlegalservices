@@ -88,15 +88,18 @@ export default function Header() {
                           key={item.name}
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px]"
+                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 focus:border-0"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
-                            animation: 'slideInLeft 0.6s ease-out forwards'
+                            animation: 'slideInLeft 0.6s ease-out forwards',
+                            textDecoration: 'none',
+                            borderBottom: 'none',
+                            boxShadow: 'none'
                           }}
                         >
                           <div className="flex items-center gap-3">
                             <IconComponent className="w-5 h-5 text-white group-hover:text-white transition-colors duration-200" />
-                            <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200">
+                            <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200" style={{textDecoration: 'none', borderBottom: 'none'}}>
                               {item.name}
                             </span>
                           </div>
